@@ -87,7 +87,7 @@ class QuestionViewController: UIViewController {
         questionProgressView.setProgress(totalProgress, animated: true)
         
         //sat navigation title
-        title = "Вопрос №\(questionIndex+1) из \(questions.count)"
+        title = "Вопрос №\(questionIndex + 1) из \(questions.count)"
         
         let currentAnswers = currentQuestion.answers
         
@@ -142,7 +142,6 @@ class QuestionViewController: UIViewController {
         } else {
             performSegue(withIdentifier: "resultSegue", sender: nil)
         }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

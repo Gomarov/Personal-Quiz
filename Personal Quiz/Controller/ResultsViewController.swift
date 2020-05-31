@@ -34,7 +34,6 @@ class ResultsViewController: UIViewController {
         guard let mostFrequencyAnimal = sortedFrequencyOfAnimals.first?.key else { return }
         
         updateUI(with: mostFrequencyAnimal)
-        
     }
     
     private func updateUI(with animal: AnimalType) {
